@@ -14,18 +14,7 @@
     align-items: center;
     justify-content: center;
   }
-  #link {
-    position: absolute;
-    top: 1em;
-    right: 2ch;
-    color: #fff;
-    text-decoration: underline;
-    font: inherit;
-    line-height: inherit;
-    z-index: 1;
-  }
   #out {
-    position: relative;
     font-family: "Menlo", "Consolas", "DejaVu Sans Mono", "Liberation Mono", monospace;
     line-height: 1;
     white-space: pre;
@@ -432,11 +421,6 @@ function buildGrid(cols, rows) {
       spans[i] = s;
     }
   }
-  const link = document.createElement("a");
-  link.id = "link";
-  link.href = "https://github.com/Janpot";
-  link.textContent = "theteapot";
-  out.appendChild(link);
 }
 
 new ResizeObserver(() => {
