@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "bake-model": "node bake-model.mjs",
+    "serve": "pnpm dlx serve"
+  }
+}
